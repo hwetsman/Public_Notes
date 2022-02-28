@@ -5,6 +5,7 @@
 - [Decision Tree](./Decision_Tree.md)
 - [Random Forest](./Random_Forest.md)
 - [Regression](./Regression.md)
+- [Unsupervised Learning](./Unsupervised_Learning.md)
 
 ### GitHub 
 - [Commit Typing](./Commit_Types.md)
