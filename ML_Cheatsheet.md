@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-  Start --> MoreThan50Samples
+  Start --> More Than 50 Samples
   Start --> Lessthan50samples
 ```
 
