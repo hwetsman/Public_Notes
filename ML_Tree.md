@@ -2,6 +2,8 @@
 flowchart LR
   Supervised_Algorithms --> Nearest_Neighbor
   Nearest_Neighbor --> KNN
+  Supervised_Algorithms --> Decision_Tree
+  Decision_Tree --> Bagging
 
 
 
