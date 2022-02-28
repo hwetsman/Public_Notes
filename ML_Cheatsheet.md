@@ -1,5 +1,9 @@
 ```mermaid
 flowchart RL
+one --> two
+two --> three
+```
+
   Start --> More_Than_50_Samples
   Start --> Less_Than_50_Samples
   Less_Than_50_Samples --> Get_More_Data
@@ -10,9 +14,9 @@ flowchart RL
   Not_Predicting_a_Category --> Labeled_Data
 
   
-
-
 ```
+
+
 
 Start
 >50 samples?
