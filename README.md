@@ -2,6 +2,7 @@
 
 ## Table of contents
 ### Machine Learning
+- [Maching Learning Tree](./ML_Tree.md)
 - [Decision Tree](./Decision_Tree.md)
 - [Random Forest](./Random_Forest.md)
 - [Regression](./Regression.md)
