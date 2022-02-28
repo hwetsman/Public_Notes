@@ -7,6 +7,7 @@
 - [Regression](./Regression.md)
 - [Unsupervised Learning](./Unsupervised_Learning.md)
 - [Feature Scaling](./Feature_Scaling.md)
+- [Bag of Words](./Bag_of_Words.md)
 
 ### GitHub 
 - [Commit Typing](./Commit_Types.md)
