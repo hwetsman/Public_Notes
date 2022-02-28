@@ -2,25 +2,17 @@
 flowchart TD
   Start --> More_Than_50_Samples
   More_Than_50_Samples --> Predicting_a_Category
+  Predicting_a_Category --> Labeled_Data
+  Predicting_a_Category --> Non-labeled_Data
   More_Than_50_Samples --> Not_Predicting_a_Category
+  Not_Predicting_a_Category --> Predicting_a_Quantity
+  Not_Predicting_a_Category --> Not_Predicting_a_Quantity
   Start --> Less_Than_50_Samples
   Less_Than_50_Samples --> Get_More_Data
 ```
 
 
-  Start --> More_Than_50_Samples;
-  Start --> Less_Than_50_Samples;
-  Less_Than_50_Samples --> Get_More_Data
-  More_Than_50_Samples --> Predicting_a_Category
-  More_Than_50_Samples --> Not_Predicting_a_Category
-  Not_Predicting_a_Category --> Predicting_a_Quantity
-  Not_Predicting_a_Category --> Just Looking
-  Not_Predicting_a_Category --> Labeled_Data
 
-  
-
-
-```
 
 Start
 >50 samples?
