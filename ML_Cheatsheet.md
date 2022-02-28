@@ -12,7 +12,10 @@ flowchart TD
   Less_than_100_samples --> fewer_features_important
   fewer_features_important --> ElasticNet lasso
   Less_than_100_samples --> fewer_features_not_important
-  fewer_features_not_important --> SVR(kernal='rbf')_EnsembleRegressors_if_not_working_then_RidgeRegressionSVR(kernal='linear')
+  fewer_features_not_important --> SVR_kernalrbf_EnsembleRegressors
+  SVR_kernalrbf_EnsembleRegressors --> SVR_works
+  SVR_kernalrbf_EnsembleRegressors --> SVR_doesnt_work
+  SVR_doesnt_work --> RidgeRegressionSVR_kernal_linear
   Not_Predicting_a_Category --> Not_Predicting_a_Quantity
   Start --> Less_Than_50_Samples
   Less_Than_50_Samples --> Get_More_Data
