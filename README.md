@@ -4,6 +4,7 @@
 ### Machine Learning
 - [Decision Tree](./Decision_Tree.md)
 - [Random Forest](./Random_Forest.md)
+- [Regression](./Regression.md)
 
 ### GitHub 
 - [Commit Typing](./Commit_Types.md)
