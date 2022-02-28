@@ -1,7 +1,10 @@
 ```mermaid
 flowchart TD
   Start --> More_Than_50_Samples
-  Start --> Lessthan50samples
+  More_Than_50_Samples --> Predicting_a_Category
+  More_Than_50_Samples --> Not_Predicting_a_Category
+  Start --> Less_Than_50_Samples
+  Less_Than_50_Samples --> Get_More_Data
 ```
 
 
