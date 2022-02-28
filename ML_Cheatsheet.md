@@ -6,6 +6,9 @@ flowchart TD
   Predicting_a_Category --> Non-labeled_Data
   More_Than_50_Samples --> Not_Predicting_a_Category
   Not_Predicting_a_Category --> Predicting_a_Quantity
+  Predicting_a_Quantity --> Regression
+  Regression --> 100_samples
+  Regression --> Less_than_100_samples
   Not_Predicting_a_Category --> Not_Predicting_a_Quantity
   Start --> Less_Than_50_Samples
   Less_Than_50_Samples --> Get_More_Data
@@ -17,6 +20,7 @@ flowchart TD
 Start
 >50 samples?
   no get more data
+
   yes predicting a category?
     no predicting a quantity?
       yes (then we'll do regression) < 100 samples?
