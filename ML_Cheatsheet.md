@@ -1,5 +1,10 @@
 ```mermaid
 flowchart TD
+  one --> two
+  two --> three
+```
+
+
   Start --> More_Than_50_Samples
   Start --> Less_Than_50_Samples
   Less_Than_50_Samples --> Get_More_Data
