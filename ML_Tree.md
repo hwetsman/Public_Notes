@@ -1,11 +1,15 @@
 ```mermaid
-flowchart TD;
-  Supervised Algorithms --> Nearest Neighbor;
-  Supervised Algorithms --> Decision Tree;
-  Supervised Algorithms --> Linear Regression;
-  Nearest Neighbor --> KNN;
-  Nearest Neighbor --> Radius Neighbors;
+flowchart LR
+  Supervised Algorithms --> Nearest Neighbor
+  Supervised Algorithms --> Decision Tree
+  Supervised Algorithms --> Linear Regression
+  Nearest Neighbor --> KNN
+  Nearest Neighbor --> Radius Neighbors
+
+
 ```
+
+
   Nearest Neighbor
     KNN
     Radius Neighbors
