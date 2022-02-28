@@ -2,48 +2,30 @@
 flowchart LR
   Supervised_Algorithms --> Nearest_Neighbor
   Nearest_Neighbor --> KNN
+  Nearest_Neighbor --> Radius_Neighbors
+  Nearest_Neighbor --> Nearest_Centroid
   Supervised_Algorithms --> Decision_Tree
   Decision_Tree --> Bagging
-
-
-
-
-```
-
-
-
-
-```mermaid
-flowchart LR
-  Supervised_Algorithms --> Nearest_Neighbor
-  Supervised_Algorithms --> Decision_Tree
+  Decision_Tree --> Random_Forest
+  Decision_Tree --> Adaboost
+  Decision_Tree --> Gradient_Boosted_Tree
   Supervised_Algorithms --> Linear_Regression
-  Nearest_Neighbor --> KNN
-  Nearest_Neighbor --> Radius Neighbors
+  Linear_Regression --> GLM
+  GLM --> GAM
+  GLM --> Logistic_Regression
+  Logistic_Regression --> Neural_Networks
+  Neural_Networks --> Deep_Neural_Networks
+  Deep_Neural_Networks --> CNN
+  Deep_Neural_Networks --> RNN
+  Deep_Neural_Networks --> Transformers
+  Linear_Regression --> Lasso_Ridge
+  Linear_Regression --> Elastic_Net
+  Linear_Regression --> SVM
+
+
 
 
 ```
 
 
-  Nearest Neighbor
-    KNN
-    Radius Neighbors
-    Nearest Centroid
-  Decision Tree
-    Bagging
-    Random Forest
-    Adaboost
-    Gradient Boosted Tree
-  Linear Regression
-    GLM
-      GAM
-      Logistic Regression
-        Neural networks
-          Deep neural netowrks
-            CNN
-            RNN
-            Transformers
-    Lasso/ridge
-    Elastic net
-    SVM
-    
+   
