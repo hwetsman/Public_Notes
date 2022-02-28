@@ -1,10 +1,10 @@
 ```mermaid
 flowchart LR
-  Supervised Algorithms --> Nearest Neighbor;
-  Supervised Algorithms --> Decision Tree;
-  Supervised Algorithms --> Linear Regression;
-  Nearest Neighbor --> KNN;
-  Nearest Neighbor --> Radius Neighbors;
+  Supervised_Algorithms --> Nearest_Neighbor
+  Supervised_Algorithms --> Decision_Tree
+  Supervised_Algorithms --> Linear_Regression
+  Nearest_Neighbor --> KNN
+  Nearest_Neighbor --> Radius Neighbors
 
 
 ```
