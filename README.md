@@ -6,6 +6,7 @@
 - [Random Forest](./Random_Forest.md)
 - [Regression](./Regression.md)
 - [Unsupervised Learning](./Unsupervised_Learning.md)
+- [Feature Scaling](./Feature_Scaling.md)
 
 ### GitHub 
 - [Commit Typing](./Commit_Types.md)
