@@ -1,5 +1,18 @@
 ```mermaid
 flowchart LR
+  one --> two
+  two --> three
+
+
+
+
+```
+
+
+
+
+```mermaid
+flowchart LR
   Supervised_Algorithms --> Nearest_Neighbor
   Supervised_Algorithms --> Decision_Tree
   Supervised_Algorithms --> Linear_Regression
