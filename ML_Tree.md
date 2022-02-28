@@ -1,7 +1,7 @@
 ```mermaid
 flowchart LR
-  one --> two
-  two --> three
+  Supervised_Algorithms --> Nearest_Neighbor
+  Nearest_Neighbor --> KNN
 
 
 
