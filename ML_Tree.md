@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TD;
+graph TD;
 Supervised Algorithms --> Nearest Neighbor;
 Supervised Algorithms --> Decision Tree;
 Supervised Algorithms --> Linear Regression;
