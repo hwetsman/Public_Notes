@@ -4,3 +4,6 @@
 ### Machine Learning
 - [Decision Tree](./Decision_Tree.md)
 
+### GitHub 
+- [Commit Typing](./Commit_Types.md)
+
