@@ -27,6 +27,14 @@ Start --> More_Than_50_Samples
 
     
     Not_Predicting_a_Category --> Not_Predicting_a_quantity
+      Not_Predicting_a_quantity --> Just_looking
+        Just_looking --> Dimensionality_reduction_works
+        Just_looking --> Dimensionality_reduction_doesnt_work
+          Dimensionality_reduction_doesnt_work --> Randomized_PCA
+      Not_Predicting_a_quantity --> Not_just_looking
+        Not_just_looking --> Predicting_structure
+          Predicting_structure --> Tough_luck
+        Not_just_looking --> Not_predicting_structure
 
 
 Start --> Less_Than_50_Samples
