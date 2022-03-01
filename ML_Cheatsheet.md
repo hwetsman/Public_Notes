@@ -40,7 +40,7 @@ id1(More Than 50 Samples?)
               id11-->|No|id12
               id99(Done)
                 id7-->|Yes|id99
-              id11-->|Yes|id99
+
     id5(Predicting a Quantity?)
       id2-->|No|id5
       id30(Regression)
@@ -54,7 +54,6 @@ id1(More Than 50 Samples?)
             id36(SVR works?)
               id35-->id36
             id37(RidgeRegression SVR with linear kernal)
-              id36-->|Yes|id99
               id36-->|No|id37
         id38(SDG Regressor)
           id32-->|No|id38
