@@ -43,6 +43,22 @@ id1(More Than 50 Samples?)
               id11-->|Yes|id99
     id5(Predicting a Quantity?)
       id2-->|No|id5
+      id30(Regression)
+        id32(Less than 100 samples?)
+          id33(Are fewer features important?)
+            id34(ElasticNet Lasso)
+              id33-->|Yes|id34
+            id35(SVR kernal='rbf' ensemble regressors)
+              id33-->|No|id35
+            id36(SVR works?)
+              id35-->id36
+            id37(RidgeRegression SVR with linear kernal)
+              id36-->|Yes|id99
+              id36-->|No|id37
+      id31(Just Looking?)
+        id5-->|Yes|id30
+        id30-->id32
+        id5-->|No|id31
 
 
   id3(Get more data!)
@@ -52,33 +68,7 @@ id1(More Than 50 Samples?)
 ```
 
 Start --> More_Than_50_Samples
-  More_Than_50_Samples --> Predicting_a_Category
-    Predicting_a_Category --> Labeled_Data
-      Labeled_Data --> Classification_less_than_100K_samples
-        Classification_less_than_100K_samples --> Linear_SVC_works
-        Classification_less_than_100K_samples --> Linear_SVC_doesnt_work
-          Linear_SVC_doesnt_work --> Text
-            Text --> Naive_bayes
-          Linear_SVC_doesnt_work --> Not_text
-            Not_text --> Kneighbors_classifier_works
-            Not_text --> Kneighbors_classifier_doesnt_work
-              Kneighbors_classifier_doesnt_work --> SVC_ensemble_classifiers
-      Labeled_Data --> Classification_more_than_100K_samples
-        Classification_more_than_100K_samples --> SGD_classifier_works
-        Classification_more_than_100K_samples --> SGD_classifier_doesnt_work
-          SGD_classifier_doesnt_work --> kernal_approx
-    Predicting_a_Category --> Non-labeled_Data
-      Non-labeled_Data --> Clustering_with_known_number_of_categories
-        Clustering_with_known_number_of_categories --> less_than_10K_samples
-          less_than_10K_samples --> Kmeans_or_spectral_clustering_GMM
-        Clustering_with_known_number_of_categories --> more_than_10K_samples
-          more_than_10K_samples --> minbatch_Kmeans
-      Non-labeled_Data --> Clustering_with_unknown_number_of_categories
-        Clustering_with_unknown_number_of_categories --> less_than_10K_samples
-          less_than_10K_samples --> Meanshift_VBGMM
-        Clustering_with_unknown_number_of_categories --> more_than_10K_samples
-          more_than_10K_samples --> tough_luck
-  More_Than_50_Samples --> Not_Predicting_a_Category
+
     Not_Predicting_a_Category --> Predicting_a_quantity
       Predicting_a_quantity --> Regression
         Regression --> Less_than_100_samples
