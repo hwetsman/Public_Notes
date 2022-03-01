@@ -2,16 +2,21 @@
 flowchart TD
 id1(More Than 50 Samples?)
   id2(Predicting a category?)
-    id1-->|yes|id2
+    id1-->|Yes|id2
     id4(Labled Data?)
-      id2-->|yes|id4
+      id2-->|Yes|id4
+      id6(>100K Samples?)
+        id4-->|yes|id6
+        id7(Liner SVC works?)
+        id4-->]No|id7
     id5(Predicting a Quantity?)
       id2-->|No|id5
+
+
   id3(Get more data!)
-    id1-->|no|id3
+    id1-->|No|id3
   
-  id6(>100K Samples?)
-  id4-->|yes|id6
+  
 ```
 
 Start --> More_Than_50_Samples
