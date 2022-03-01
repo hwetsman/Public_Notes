@@ -2,9 +2,9 @@
 flowchart TD
 id1(More Than 50 Samples?)
   id2(Predicting a category?)
+    id1-->|yes|id2
   id3(Get more data!)
-  id1-->|yes|id2
-  id1-->|no|id3
+    id1-->|no|id3
   id4(Labled Data?)
   id2-->|yes|id4
   id5(Predicting a quantity?)
