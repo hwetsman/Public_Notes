@@ -59,11 +59,11 @@ id1{More Than 50 Samples?}
         id5-->|Yes|id30
         id30-->id32
         id5-->|No|id31
-        id40(Dimensionality Reduction works?)
+        id40{Dimensionality Reduction works?}
           id31-->|Yes|id40
         id41(Randomized PCA)
           id40-->|No|id41
-        id42(Predicting structure?)
+        id42{Predicting structure?}
         id31-->|No|id42
           id42-->|No|id99
           id97(Tough luck)
