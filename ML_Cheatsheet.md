@@ -3,6 +3,16 @@ flowchart TD
 Start --> More_Than_50_Samples
   More_Than_50_Samples --> Predicting_a_Category
     Predicting_a_Category --> Labeled_Data
+      Labled_Data --> Classification_less_than_100K_samples
+        Classification_less_than_100K_samples --> Linear_SVC_works
+        Classification_less_than_100K_samples --> Linear_SVC_doesnt_work
+          Linear_SVC_doesnt_work --> Text
+          Linear_SVC_doesnt_work --> Not_text
+
+      Labled_Data --> Classification_more_than_100K_samples
+      yes (then we'll do classification) <100K samples?
+        yes Linear SVC if not working is text? if yes, naive bayes, if not text then Kneighbors classifier or if not working SVC ensemble classifiers
+        No SGD classifier and if not working kernal approx.
 
     
     Predicting_a_Category --> Non-labeled_Data
