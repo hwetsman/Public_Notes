@@ -5,13 +5,11 @@ id1(More Than 50 Samples?)
     id1-->|yes|id2
     id4(Labled Data?)
       id2-->|yes|id4
-    id7(Predicting a Quantity?)
-      id4-->|No|id7
+    id5(Predicting a Quantity?)
+      id2-->|No|id5
   id3(Get more data!)
     id1-->|no|id3
   
-  id5(Predicting a quantity?)
-  id2-->|no|id5
   id6(>100K Samples?)
   id4-->|yes|id6
 ```
