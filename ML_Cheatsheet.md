@@ -8,7 +8,7 @@ id1(More Than 50 Samples?)
       id6(>100K Samples?)
         id4-->|yes|id6
         id7(Liner SVC works?)
-        id4-->]No|id7
+        id4-->|No|id7
     id5(Predicting a Quantity?)
       id2-->|No|id5
 
