@@ -10,6 +10,10 @@ Start --> More_Than_50_Samples
 
 
   More_Than_50_Samples --> Not_Predicting_a_Category
+    Not_Predicting_a_Category --> Predicting_a_quantity
+
+    
+    Not_Predicting_a_Category --> Not_Predicting_a_quantity
 
 
 Start --> Less_Than_50_Samples
@@ -18,11 +22,7 @@ Start --> Less_Than_50_Samples
 
 ```
 
-```
-  Start --> More_Than_50_Samples
-  More_Than_50_Samples --> Predicting_a_Category
-  Predicting_a_Category --> Labeled_Data
-  Predicting_a_Category --> Non-labeled_Data
+
   More_Than_50_Samples --> Not_Predicting_a_Category
   Not_Predicting_a_Category --> Predicting_a_Quantity
   Predicting_a_Quantity --> Regression
@@ -32,8 +32,7 @@ Start --> Less_Than_50_Samples
   fewer_features_important --> ElasticNet lasso
   Less_than_100_samples --> fewer_features_not_important
   Not_Predicting_a_Category --> Not_Predicting_a_Quantity
-  Start --> Less_Than_50_Samples
-  Less_Than_50_Samples --> Get_More_Data
+ 
 ```
 
 fewer_features_not_important --> SVR_kernalrbf_EnsembleRegressors
