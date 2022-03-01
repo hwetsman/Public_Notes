@@ -18,11 +18,19 @@ Start --> More_Than_50_Samples
         Classification_more_than_100K_samples --> SGD_classifier_doesnt_work
           SGD_classifier_doesnt_work --> kernal_approx
 
-
-
-    
     Predicting_a_Category --> Non-labeled_Data
+      Non-labeled_Data --> Clustering_with_known_number_of_categories
+        Clustering_with_known_number_of_categories --> less_than_10K_samples
+          less_than_10K_samples --> Kmeans_or_spectral_clustering_GMM
+        Clustering_with_known_number_of_categories --> more_than_10K_samples
+          more_than_10K_samples --> minbatch_Kmeans
 
+
+      Non-labeled_Data --> Clustering_with_unknown_number_of_categories
+        Clustering_with_unknown_number_of_categories --> less_than_10K_samples
+          less_than_10K_samples --> Meanshift_VBGMM
+        Clustering_with_unknown_number_of_categories --> more_than_10K_samples
+          more_than_10K_samples --> tough_luck
 
 
   More_Than_50_Samples --> Not_Predicting_a_Category
