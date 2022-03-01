@@ -10,6 +10,9 @@ id1(More Than 50 Samples?)
         id7(Liner SVC works?)
         id6-->|No|id7
         id8(SGD Classifier works?)
+          id8-->|Yes|id99
+          id13(kernal approx)
+          id8-->|No|id13
         id6-->|Yes|id8
           id9(Is data text?)
           id7-->|No|id9
