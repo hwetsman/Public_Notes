@@ -1,5 +1,6 @@
 ```mermaid
 flowchart TD
+classDef default fill:#f9f,stroke:#333,stroke-width:4px;
 id1{More Than 50 Samples?}
   id2{Predicting a category?}
     id1-->|Yes|id2
