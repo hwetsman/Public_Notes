@@ -3,7 +3,7 @@ flowchart TD
 Start --> More_Than_50_Samples
   More_Than_50_Samples --> Predicting_a_Category
     Predicting_a_Category --> Labeled_Data
-      Labled_Data --> Classification_less_than_100K_samples
+      Labeled_Data --> Classification_less_than_100K_samples
         Classification_less_than_100K_samples --> Linear_SVC_works
         Classification_less_than_100K_samples --> Linear_SVC_doesnt_work
           Linear_SVC_doesnt_work --> Text
@@ -12,7 +12,7 @@ Start --> More_Than_50_Samples
             Not_text --> Kneighbors_classifier_works
             Not_text --> Kneighbors_classifier_doesnt_work
               Kneighbors_classifier_doesnt_work --> SVC_ensemble_classifiers
-      Labled_Data --> Classification_more_than_100K_samples
+      Labeled_Data --> Classification_more_than_100K_samples
         Classification_more_than_100K_samples --> SGD_classifier_works
         Classification_more_than_100K_samples --> SGD_classifier_doesnt_work
           SGD_classifier_doesnt_work --> kernal_approx
