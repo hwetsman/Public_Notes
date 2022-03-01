@@ -68,6 +68,7 @@ id1(More Than 50 Samples?)
           id40-->|No|id41
           id40-->|Yes|id99
         id42(Predicting structure?)
+        id31-->|No|id42
           id42-->|No|id99
           id42-->|Yes|id98
 
