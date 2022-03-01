@@ -1,5 +1,15 @@
 ```mermaid
 flowchart TD
+Start --> A
+
+
+
+Start --> B
+
+
+```
+
+```
   Start --> More_Than_50_Samples
   More_Than_50_Samples --> Predicting_a_Category
   Predicting_a_Category --> Labeled_Data
