@@ -7,12 +7,18 @@ Start --> More_Than_50_Samples
         Classification_less_than_100K_samples --> Linear_SVC_works
         Classification_less_than_100K_samples --> Linear_SVC_doesnt_work
           Linear_SVC_doesnt_work --> Text
+            Text --> Naive_bayes
           Linear_SVC_doesnt_work --> Not_text
+            Not_text --> Kneighbors_classifier_works
+            Not_text --> Kneighbors_classifier_doesnt_work
+              Kneighbors_classifier_doesnt_work --> SVC_ensemble_classifiers
 
       Labled_Data --> Classification_more_than_100K_samples
-      yes (then we'll do classification) <100K samples?
-        yes Linear SVC if not working is text? if yes, naive bayes, if not text then Kneighbors classifier or if not working SVC ensemble classifiers
-        No SGD classifier and if not working kernal approx.
+        Classification_more_than_100K_samples --> SGD_classifier_works
+        Classification_more_than_100K_samples --> SGD_classifier_doesnt_work
+          SGD_classifier_doesnt_work --> kernal_approx
+
+
 
     
     Predicting_a_Category --> Non-labeled_Data
