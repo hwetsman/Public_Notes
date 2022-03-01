@@ -14,8 +14,8 @@ id1(More Than 50 Samples?)
           id15-->|Yes|id16
             id20(Meanshift_VBGMM)
             id98(Tough Luck)
-            id15-->|Yes|id20
-            id15-->|No|id98
+            id17-->|Yes|id20
+            id17-->|No|id98
           id15-->|No|id17
             id18(Minibatch Kmeans)
             id19(Kmeans or spectral clustering GMM)
