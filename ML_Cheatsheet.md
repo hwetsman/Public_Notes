@@ -11,6 +11,9 @@ Start --> More_Than_50_Samples
 
   More_Than_50_Samples --> Not_Predicting_a_Category
     Not_Predicting_a_Category --> Predicting_a_quantity
+      Predicting_a_quantity --> Regression
+        Regression --> Less_than_100_samples
+        Regression --> 100_samples_or_more
 
     
     Not_Predicting_a_Category --> Not_Predicting_a_quantity
@@ -23,28 +26,11 @@ Start --> Less_Than_50_Samples
 ```
 
 
-  More_Than_50_Samples --> Not_Predicting_a_Category
-  Not_Predicting_a_Category --> Predicting_a_Quantity
-  Predicting_a_Quantity --> Regression
-  Regression --> 100_samples
-  Regression --> Less_than_100_samples
-  Less_than_100_samples --> fewer_features_important
-  fewer_features_important --> ElasticNet lasso
-  Less_than_100_samples --> fewer_features_not_important
-  Not_Predicting_a_Category --> Not_Predicting_a_Quantity
- 
-```
-
-fewer_features_not_important --> SVR_kernalrbf_EnsembleRegressors
-  SVR_kernalrbf_EnsembleRegressors --> SVR_works
-  SVR_kernalrbf_EnsembleRegressors --> SVR_doesnt_work
-  SVR_doesnt_work --> RidgeRegressionSVR_kernal_linear
 
 
 Start
 >50 samples?
   no get more data
-
   yes predicting a category?
     no predicting a quantity?
       yes (then we'll do regression) < 100 samples?
