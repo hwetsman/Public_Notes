@@ -13,6 +13,10 @@ id1(More Than 50 Samples?)
         id6-->|Yes|id8
           id9(Is data text?)
           id7-->|No|id9
+            id10(Naive Bayes)
+            id9-->|Yes|id10
+            id11(Kneighbors classifier works?)
+            id9-->|No|id11
     id5(Predicting a Quantity?)
       id2-->|No|id5
 
