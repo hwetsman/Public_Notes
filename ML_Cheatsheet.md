@@ -46,6 +46,7 @@ id1(More Than 50 Samples?)
       id30(Regression)
         id32(Less than 100 samples?)
           id33(Are fewer features important?)
+            id32-->|Yes|id33
             id34(ElasticNet Lasso)
               id33-->|Yes|id34
             id35(SVR kernal='rbf' ensemble regressors)
@@ -55,6 +56,8 @@ id1(More Than 50 Samples?)
             id37(RidgeRegression SVR with linear kernal)
               id36-->|Yes|id99
               id36-->|No|id37
+        id38(SDG Regressor)
+          id32-->|No|id38
       id31(Just Looking?)
         id5-->|Yes|id30
         id30-->id32
