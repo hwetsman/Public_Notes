@@ -9,6 +9,10 @@ id1(More Than 50 Samples?)
         id4-->|yes|id6
         id14(Clustering)
         id15(Known number of categories?)
+          id16(>10K samples?)
+          id17(>10K samples?)
+          id15-->|Yes|id16
+          id15-->|No|id17
         id14-->id15
         id4-->|No|id14
         id7(Liner SVC works?)
