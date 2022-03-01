@@ -69,7 +69,8 @@ id1(More Than 50 Samples?)
         id42(Predicting structure?)
         id31-->|No|id42
           id42-->|No|id99
-          id42-->|Yes|id98
+          id97(Tough luck)
+          id42-->|Yes|id97
 
   id3(Get more data!)
     id1-->|No|id3
