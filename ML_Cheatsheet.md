@@ -66,18 +66,13 @@ id1(More Than 50 Samples?)
           id31-->|Yes|id40
         id41(Randomized PCA)
           id40-->|No|id41
-          id40-->|Yes|id99
         id42(Predicting structure?)
         id31-->|No|id42
           id42-->|No|id99
           id42-->|Yes|id98
 
-
-
   id3(Get more data!)
     id1-->|No|id3
-  
-  
 ```
 
 Start --> More_Than_50_Samples
