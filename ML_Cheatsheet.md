@@ -5,6 +5,9 @@ id2(Predicting a category?)
 id3(Get more data!)
 id1-->|yes|id2
 id1-->|no|id3
+id4(Labled Data?)
+id2-->|yes|id4
+
 Start --> More_Than_50_Samples
   More_Than_50_Samples --> Predicting_a_Category
     Predicting_a_Category --> Labeled_Data
