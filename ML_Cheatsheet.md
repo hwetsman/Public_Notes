@@ -17,6 +17,10 @@ id1(More Than 50 Samples?)
             id9-->|Yes|id10
             id11(Kneighbors classifier works?)
             id9-->|No|id11
+              id12(SVC ensemble classifiers)
+              id11-->|No|id12
+              id99(Done)
+              id11-->|Yes|id99
     id5(Predicting a Quantity?)
       id2-->|No|id5
 
