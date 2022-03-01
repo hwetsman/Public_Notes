@@ -1,5 +1,8 @@
 ```mermaid
 flowchart TD
+id1(More Than 50 Samples?)
+id2(Predicting a category?)
+id1-->|yes|id2
 Start --> More_Than_50_Samples
   More_Than_50_Samples --> Predicting_a_Category
     Predicting_a_Category --> Labeled_Data
@@ -53,4 +56,5 @@ Start --> Less_Than_50_Samples
   Less_Than_50_Samples --> Get_More_Data
 ```
 
-  
+id1(This is the text in the box)
+A-->|text|B
