@@ -39,6 +39,7 @@ id1(More Than 50 Samples?)
               id12(SVC ensemble classifiers)
               id11-->|No|id12
               id99(Done)
+                id7-->|Yes|id99
               id11-->|Yes|id99
     id5(Predicting a Quantity?)
       id2-->|No|id5
