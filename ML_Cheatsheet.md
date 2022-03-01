@@ -1,14 +1,16 @@
 ```mermaid
 flowchart TD
 id1(More Than 50 Samples?)
-id2(Predicting a category?)
-id3(Get more data!)
-id1-->|yes|id2
-id1-->|no|id3
-id4(Labled Data?)
-id2-->|yes|id4
-id5(Predicting a quantity?)
-id2-->|no|id5
+  id2(Predicting a category?)
+  id3(Get more data!)
+  id1-->|yes|id2
+  id1-->|no|id3
+  id4(Labled Data?)
+  id2-->|yes|id4
+  id5(Predicting a quantity?)
+  id2-->|no|id5
+  id6(>100K Samples?)
+  id4-->|yes|id6
 ```
 
 Start --> More_Than_50_Samples
@@ -60,8 +62,7 @@ Start --> More_Than_50_Samples
         Not_just_looking --> Predicting_structure
           Predicting_structure --> Tough_luck
         Not_just_looking --> Not_predicting_structure
-Start --> Less_Than_50_Samples
-  Less_Than_50_Samples --> Get_More_Data
+
 ```
 
 id1(This is the text in the box)
