@@ -7,6 +7,8 @@ id1-->|yes|id2
 id1-->|no|id3
 id4(Labled Data?)
 id2-->|yes|id4
+id5(Predicting a quantity?)
+id2-->|no|id5
 ```
 
 Start --> More_Than_50_Samples
