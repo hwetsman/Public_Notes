@@ -6,13 +6,17 @@ id1(More Than 50 Samples?)
     id4(Labled Data?)
       id2-->|Yes|id4
       id6(>100K Samples?)
-        id4-->|yes|id6
+        id4-->|Yes|id6
         id14(Clustering)
         id15(Known number of categories?)
           id16(>10K samples?)
           id17(>10K samples?)
           id15-->|Yes|id16
           id15-->|No|id17
+            id18(Minibatch Kmeans)
+            id19(Kmeans or spectral clustering GMM)
+            id16-->|Yes|id18
+            id16-->|No|id19
         id14-->id15
         id4-->|No|id14
         id7(Liner SVC works?)
