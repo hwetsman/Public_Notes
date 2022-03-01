@@ -1,11 +1,11 @@
 ```mermaid
 flowchart TD
-id1(More Than 50 Samples?)
-  id2(Predicting a category?)
+id1{More Than 50 Samples?}
+  id2{Predicting a category?}
     id1-->|Yes|id2
-    id4(Labled Data?)
+    id4{Labled Data?}
       id2-->|Yes|id4
-      id6(>100K Samples?)
+      id6{>100K Samples?}
         id4-->|Yes|id6
         id14(Clustering)
         id15(Known number of categories?)
