@@ -8,9 +8,9 @@ id1{More Than 50 Samples?}
       id6{>100K Samples?}
         id4-->|Yes|id6
         id14(Clustering)
-        id15(Known number of categories?)
-          id16(>10K samples?)
-          id17(>10K samples?)
+        id15{Known number of categories?}
+          id16{>10K samples?}
+          id17{>10K samples?}
           id15-->|Yes|id16
             id20(Meanshift_VBGMM)
             id98(Tough Luck)
@@ -23,33 +23,33 @@ id1{More Than 50 Samples?}
             id16-->|No|id19
         id14-->id15
         id4-->|No|id14
-        id7(Liner SVC works?)
+        id7{Liner SVC works?}
         id6-->|No|id7
-        id8(SGD Classifier works?)
+        id8{SGD Classifier works?}
           id13(kernal approx)
           id8-->|No|id13
         id6-->|Yes|id8
-          id9(Is data text?)
+          id9{Is data text?}
           id7-->|No|id9
             id10(Naive Bayes)
             id9-->|Yes|id10
-            id11(Kneighbors classifier works?)
+            id11{Kneighbors classifier works?}
             id9-->|No|id11
               id12(SVC ensemble classifiers)
               id11-->|No|id12
               id99(Done)
 
-    id5(Predicting a Quantity?)
+    id5{Predicting a Quantity?}
       id2-->|No|id5
       id30(Regression)
-        id32(Less than 100 samples?)
-          id33(Are fewer features important?)
+        id32{Less than 100 samples?}
+          id33{Are fewer features important?}
             id32-->|Yes|id33
             id34(ElasticNet Lasso)
               id33-->|Yes|id34
             id35(SVR kernal='rbf' ensemble regressors)
               id33-->|No|id35
-            id36(SVR works?)
+            id36{SVR works?}
               id35-->id36
             id37(RidgeRegression SVR with linear kernal)
               id36-->|No|id37
