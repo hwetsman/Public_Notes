@@ -11,6 +11,8 @@ id1(More Than 50 Samples?)
         id6-->|No|id7
         id8(SGD Classifier works?)
         id6-->|Yes|id8
+          id9(Is data text?)
+          id7-->|No|id9
     id5(Predicting a Quantity?)
       id2-->|No|id5
 
