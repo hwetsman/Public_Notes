@@ -55,7 +55,7 @@ id1{More Than 50 Samples?}
               id36-->|No|id37
         id38(SDG Regressor)
           id32-->|No|id38
-      id31(Just Looking?)
+      id31{Just Looking?}
         id5-->|Yes|id30
         id30-->id32
         id5-->|No|id31
