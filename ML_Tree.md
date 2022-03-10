@@ -31,14 +31,17 @@ flowchart TB
         Unsupervised--->Data
 
         Clustering
+          Data--->Clustering
           K_mean(K<br>means)
           K_med(K<br>median)
           hierarchy(Hierarchy<br>clustering)
           Expectation(Expectation<br>Maximization)
 
         Association(Association<br>Analysis)
+          Data--->Association
 
         Dimension(Dimensionality<br>Reduction)
+          Data--->Dimension
       
 
 
