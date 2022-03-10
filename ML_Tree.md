@@ -43,6 +43,12 @@ flowchart LR
 
         Association(Association<br>Analysis)
           Data--->Association
+          APRIORI
+            Association--->APRIORI
+          Eclat
+            Association--->Eclat
+          FP(FP<br>Growth)
+            Association--->FP
 
         Dimension(Dimensionality<br>Reduction)
           Data--->Dimension
