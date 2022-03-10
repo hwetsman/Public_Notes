@@ -13,7 +13,7 @@ flowchart TB
     Decision --> Adaboost
     Decision --> Gradient_Boosted_Tree
     Supervised --> Linear_Regression
-    Linear_Regression --> GLM
+    Linear(Linear<br>Regression) --> GLM
     GLM --> GAM
     GLM --> Logistic_Regression
     Logistic_Regression --> Neural_Networks
@@ -21,9 +21,9 @@ flowchart TB
     Deep_Neural_Networks --> CNN
     Deep_Neural_Networks --> RNN
     Deep_Neural_Networks --> Transformers
-    Linear_Regression --> Lasso_Ridge
-    Linear_Regression --> Elastic_Net
-    Linear_Regression --> SVM
+    Linear --> Lasso_Ridge
+    Linear --> Elastic_Net
+    Linear --> SVM
 ````
     Unsupervised(Unsupervised<br>Learning)
     Unsupervised--->Data without label
