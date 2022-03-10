@@ -2,13 +2,11 @@
 flowchart TB
   Machine_Learning(Machine<br>Learning)
   Supervised(Supervised<br>Algorithms)
-    Supervised-->Nearest_Neighbor
- 
+    Supervised-->Nearest(Nearest<br>Neighbor)
       Machine_Learning--->Supervised
-
-    Nearest_Neighbor --> KNN
-    Nearest_Neighbor --> Radius_Neighbors
-    Nearest_Neighbor --> Nearest_Centroid
+    Nearest --> KNN
+    Nearest --> Radius_Neighbors
+    Nearest --> Nearest_Centroid
     Supervised --> Decision_Tree
     Decision_Tree --> Bagging
     Decision_Tree --> Random_Forest
