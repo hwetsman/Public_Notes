@@ -64,6 +64,8 @@ flowchart LR
               Selection--->Filter
             Embedded(Embedded_Mathod)
               Selection--->Embedded
+
+    Reinforcement(Reinforcement<br>Learning)
       
 
 
