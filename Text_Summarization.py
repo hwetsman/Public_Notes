@@ -1,4 +1,15 @@
+"""
+Based on script by Aman Kharwal
+added 3-10-22
+"""
+
+import nltk
+import string
+from heapq import nlargest
+
+
 text = "Enter Text to Summarize"
+
 if text.count(". ") > 20:
   length = int(round(text.count(". ")/10, 0))
 else:
