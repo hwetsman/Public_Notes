@@ -33,9 +33,13 @@ flowchart TB
         Clustering
           Data--->Clustering
           K_mean(K<br>means)
+            clustering--->K_mean
           K_med(K<br>median)
+            clustering--->K_med
           hierarchy(Hierarchy<br>clustering)
+            clustering--->hierarchy
           Expectation(Expectation<br>Maximization)
+            clustering--->Expectation
 
         Association(Association<br>Analysis)
           Data--->Association
