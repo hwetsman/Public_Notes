@@ -9,12 +9,12 @@ flowchart TB
     Nearest_Neighbor --> KNN
     Nearest_Neighbor --> Radius_Neighbors
     Nearest_Neighbor --> Nearest_Centroid
-    Supervised_Algorithms --> Decision_Tree
+    Supervised --> Decision_Tree
     Decision_Tree --> Bagging
     Decision_Tree --> Random_Forest
     Decision_Tree --> Adaboost
     Decision_Tree --> Gradient_Boosted_Tree
-    Supervised_Algorithms --> Linear_Regression
+    Supervised --> Linear_Regression
     Linear_Regression --> GLM
     GLM --> GAM
     GLM --> Logistic_Regression
