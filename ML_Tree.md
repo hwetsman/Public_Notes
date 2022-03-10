@@ -12,8 +12,8 @@ flowchart TB
     Decision --> Random_Forest
     Decision --> Adaboost
     Decision --> Gradient_Boosted_Tree
-    Supervised --> Linear_Regression
-    Linear(Linear<br>Regression) --> GLM
+    Supervised --> Linear(Linear<br>Regression)
+    Linear --> GLM
     GLM --> GAM
     GLM --> Logistic_Regression
     Logistic_Regression --> Neural_Networks
