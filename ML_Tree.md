@@ -1,5 +1,5 @@
 ```mermaid
-flowchart LR
+flowchart TB
   Supervised_Algorithms --> Nearest_Neighbor
   Nearest_Neighbor --> KNN
   Nearest_Neighbor --> Radius_Neighbors
