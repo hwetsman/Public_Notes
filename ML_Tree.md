@@ -53,11 +53,17 @@ flowchart LR
         Dimension(Dimensionality<br>Reduction)
           Data--->Dimension
           Feature(Freature<br>Extraction)
+            Data--->Feature
             PCA(Prinicpal<br>Component<br>Analysis)
+              Feature--->PCA
           Selection(Feature<br>Selection)
+            Data--->Selection
             Wrapper
+              Selection--->Wrapper
             Filter
+              Selection--->Filter
             Embedded(Embedded_Mathod)
+              Selection--->Embedded
       
 
 
