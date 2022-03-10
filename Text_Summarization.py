@@ -15,9 +15,11 @@ if text.count(". ") > 20:
 else:
   length = 1
   
-nopuch =[char for char in text if char not in string.punctuation]
-nopuch = "".join(nopuch)
-processed_text = [word for word in nopuch.split() if word.lower() not in nltk.corpus.stopwords.words('english')]
+nopucnt =[char for char in text if char not in string.punctuation]
+nopucnt = "".join(nopucnt)
+
+processed_text = [word for word in nopucnt.split() if word.lower() not in nltk.corpus.stopwords.words('english')]
+
 word_freq = {}
 for word in processed_text:
 if word not in word_freq:
