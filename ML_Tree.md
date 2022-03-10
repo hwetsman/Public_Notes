@@ -1,5 +1,5 @@
 ````mermaid
-flowchart TB
+flowchart LR
   Machine_Learning(Machine<br>Learning)
   Supervised(Supervised<br>Algorithms)
     Supervised-->Nearest(Nearest<br>Neighbor)
