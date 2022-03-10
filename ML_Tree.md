@@ -1,7 +1,8 @@
-```mermaid
+````mermaid
 flowchart TB
   Machine_Learning(Machine<br>Learning)
   Supervised(Supervised<br>Algorithms)
+````
     Supervised-->Nearest_Neighbor
       Machine_Learning--->Supervised
     Nearest_Neighbor --> KNN
@@ -32,7 +33,7 @@ flowchart TB
 
 
 
-```
+
 
 
    
