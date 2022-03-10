@@ -5,7 +5,7 @@ flowchart TB
     Supervised-->Nearest_Neighbor
  
       Machine_Learning--->Supervised
-````
+
     Nearest_Neighbor --> KNN
     Nearest_Neighbor --> Radius_Neighbors
     Nearest_Neighbor --> Nearest_Centroid
@@ -26,7 +26,7 @@ flowchart TB
     Linear_Regression --> Lasso_Ridge
     Linear_Regression --> Elastic_Net
     Linear_Regression --> SVM
-
+````
     Unsupervised(Unsupervised<br>Learning)
     Unsupervised--->Data without label
       Machine_Learning--->Unsupervised
