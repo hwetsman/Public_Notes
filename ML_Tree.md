@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TB
-  Machine_Learning
+  Machine_Learning(Machine<br>Learning)
 
     Supervised_Algorithms --> Nearest_Neighbor
       Machine_Learning--->Supervised_Algorithm
@@ -25,7 +25,8 @@ flowchart TB
     Linear_Regression --> Elastic_Net
     Linear_Regression --> SVM
 
-    Unsupervised<br>Learning--->Data<br>without<br>label
+    Unsupervised(Unsupervised<br>Learning)
+    Unsupervised--->Data<br>without<br>label
       Machine_Learning--->Unsupervised<br>Learning
 
 
