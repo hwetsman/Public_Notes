@@ -7,11 +7,11 @@ flowchart TB
     Nearest --> KNN
     Nearest --> Radius_Neighbors
     Nearest --> Nearest_Centroid
-    Supervised --> Decision_Tree
-    Decision_Tree --> Bagging
-    Decision_Tree --> Random_Forest
-    Decision_Tree --> Adaboost
-    Decision_Tree --> Gradient_Boosted_Tree
+    Supervised --> Decision(Decision<br>Tree)
+    Decision --> Bagging
+    Decision --> Random_Forest
+    Decision --> Adaboost
+    Decision --> Gradient_Boosted_Tree
     Supervised --> Linear_Regression
     Linear_Regression --> GLM
     GLM --> GAM
