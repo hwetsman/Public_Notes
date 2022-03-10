@@ -66,11 +66,14 @@ flowchart LR
               Selection--->Embedded
 
     Reinforcement(Reinforcement<br>Learning)
+      Machine_Learning--->Reinforcement
       Model(Model<br>Free)
+        Reinforcement--->Model
         Q(Q<br>Learning)
         Hybrid
         Policy(Policy<br>opimization)
       Based(Model<br>Based)
+        Reinforcement--->Based
         Learn(Learn<br>the<br>Model)
         Given(Given<br>the<br>Model)
       
