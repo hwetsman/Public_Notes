@@ -2,10 +2,10 @@
 flowchart TB
   Machine_Learning(Machine<br>Learning)
   Supervised(Supervised<br>Algorithms)
-
     Supervised-->Nearest_Neighbor
- ````
+ 
       Machine_Learning--->Supervised
+````
     Nearest_Neighbor --> KNN
     Nearest_Neighbor --> Radius_Neighbors
     Nearest_Neighbor --> Nearest_Centroid
