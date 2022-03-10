@@ -22,13 +22,7 @@ processed_text = [word for word in nopucnt.split() if word.lower() not in nltk.c
 
 word_freq = {}
 for word in processed_text:
-  if word not in word_freq:
-    word_freq[word] = 1
-  else:
-    word_freq[word] = word_freq[word] + 1
- 
-# for word in processed_text:
-#   word_freq[word] = 1+word_freq.get(word,0)
+  word_freq[word] = 1+word_freq.get(word,0)
 
 max_freq = max(word_freq.values())
 for word in word_freq.keys():
