@@ -24,10 +24,16 @@ flowchart TB
     Linear --> Lasso_Ridge
     Linear --> Elastic_Net
     Linear --> SVM
-````
+
     Unsupervised(Unsupervised<br>Learning)
-    Unsupervised--->Data without label
       Machine_Learning--->Unsupervised
+        Data(Data<br>without<br>label)
+        Unsupervised--->Data
+      
+
+
+
+````
 
 
 
