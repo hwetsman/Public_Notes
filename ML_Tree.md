@@ -4,7 +4,7 @@ flowchart TB
   Supervised(Supervised<br>Algorithms)
 
     Supervised-->Nearest_Neighbor
-    ````
+ ````
       Machine_Learning--->Supervised
     Nearest_Neighbor --> KNN
     Nearest_Neighbor --> Radius_Neighbors
