@@ -70,12 +70,17 @@ flowchart LR
       Model(Model<br>Free)
         Reinforcement--->Model
         Q(Q<br>Learning)
+          Model--->Q
         Hybrid
+          Model--->Hybrid
         Policy(Policy<br>opimization)
+          Model--->Policy
       Based(Model<br>Based)
         Reinforcement--->Based
         Learn(Learn<br>the<br>Model)
+          Based--->Learn
         Given(Given<br>the<br>Model)
+          Based--->Learn
       
 
 
