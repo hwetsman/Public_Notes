@@ -29,6 +29,16 @@ flowchart TB
       Machine_Learning--->Unsupervised
         Data(Data<br>without<br>label)
         Unsupervised--->Data
+
+        Clustering
+          K_mean(K<br>means)
+          K_med(K<br>median)
+          hierarchy(Hierarchy<br>clustering)
+          Expectation(Expectation<br>Maximization)
+
+        Association(Association<br>Analysis)
+
+        Dimension(Dimensionality<br>Reduction)
       
 
 
