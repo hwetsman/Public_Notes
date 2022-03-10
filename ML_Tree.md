@@ -30,8 +30,8 @@ flowchart TB
         Data(Data<br>without<br>label)
         Unsupervised--->Data
 
-        Clustering
-          Data--->Clustering
+        clustering(Clustering)
+          Data--->clustering
           K_mean(K<br>means)
             clustering--->K_mean
           K_med(K<br>median)
